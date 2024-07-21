@@ -1,0 +1,618 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #140b28;
+}
+html {
+      scroll-behavior: smooth;
+    }
+/* <-----------navbar----------------------------------------------> */
+.navbar {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    /* background-color: #140b28; */
+    background: linear-gradient(to bottom, rgba(25, 1, 83, 0.3), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 5vw;
+}
+
+.navleft a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 600;
+
+}
+.navleft a:hover{
+    color: white;
+}
+.navright a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.navright a:hover{
+    background-color: white;
+    color: #140b28;
+}
+/* <-----------page1----------------------------------------------> */
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #140b28;
+    z-index: 0;
+    overflow-x: hidden;
+}
+.page1 .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    filter: blur(50px);
+    z-index: 1;
+}
+.page1 .back .box1{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(0, 255, 255);
+    border-radius: 50%;
+    top:5vh;
+    left : -10vh;
+    
+}
+.page1 .back .box2{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: rgb(194, 101, 67);
+    border-bottom-right-radius: 50%;
+    top:35vh;
+    left:-7vh;
+}
+.page1 .back .box3{
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    background-color: rgb(157, 0, 255);
+    border-radius: 50%;
+    top:5vh;
+    left:27vh;
+}
+.page1 .back .box4{
+    position: absolute;
+    width: 15vw;
+    height: 10vw;
+    background-color: rgb(0, 174, 255);
+    border-radius: 50%;
+    top:35vh;
+    left:30vh;
+}
+.page1 .back .box5{
+    position: absolute;
+    width: 60vw;
+    height: 20vw;
+    background-color: rgb(123, 0, 255);
+    border-top-left-radius: 40%;
+    bottom:0;
+    right: -20vw;
+}
+.page1 .back .box6{
+    position: absolute;
+    width: 20vw;
+    height: 30vw;
+    background-color: rgb(0, 242, 255);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 30%;
+    bottom :0vh;
+    right:-5vh;
+}
+.page1 .back .box7{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: rgb(157, 0, 255);
+    border-radius: 50%;
+    bottom :15vh;
+    right:25vh;
+}
+.page1 .back .box8{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-color: rgb(0, 30, 255);
+    border-radius: 50%;
+    bottom :25vh;
+    right:20vh;
+}
+.page1 .top{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    z-index: 2;
+}
+.page1 .top h1{
+    position: absolute;
+    color: white;
+    top: 40vh;
+    left: 5vw;
+    font-size: 9vh;
+}
+/* <-----------page2----------------------------------------------> */
+
+.page2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #140b28;
+    padding: 20px;
+}
+
+.page2 .projects {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 40px);
+    /* border: 1px solid rgb(53, 0, 128); */
+    border-radius: 10px;
+    background-color: #1c1034;
+}
+
+.page2 .projects .sno {
+    position: sticky;
+    top: 10vh;
+    width: 7%;
+    height: 70vh;
+    background-color: #1c1034;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    /* padding: 0 20px; */
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.page2 .projects .sno .numbers{
+    font-size: 2rem;
+    color: white;
+    width: 80px;
+    height: 20%;
+    /* border-bottom: 1px solid rgb(131, 131, 223); */
+    background-color: #140b28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+.page2 .projects .description {
+    flex-grow: 1;
+    background-color: rgb(131, 131, 223);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.project1 {
+    display: flex;
+    /* margin-bottom: 20px; */
+    /* border: 1px solid rgb(163, 142, 192); */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 10vw;
+}
+
+.project1 .left {
+    flex: 1;
+
+
+}
+
+.project1 .left video {
+    max-height: 40vh;
+    max-width: 40vh;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.project1 .right {
+    flex: 2;
+    min-height: 70vh;
+    display: flex;
+    align-items: first baseline;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* padding-left: 15vw; */
+    /* background-color: red; */
+    color: #ffffff;
+}
+.project1 .right p{
+    font-family: noto sans;
+    line-height:25px;
+}
+.project1 .right a{
+    text-decoration: none;
+    color: white;
+
+}
+.project1 .right .file a{
+    text-decoration: none;
+    display: flex;
+    width: 40vw;
+    height: 8vh;
+    background-color: rgba(255,255,255,0.2);
+    /* border: 2px solid rgb(189, 228, 251); */
+    margin-top: 10px;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+.projects #one{
+    background: linear-gradient(to top right, #261945, #4d2646);
+}
+.projects #two{
+    background: linear-gradient(to top right, #261945, #323663);
+}
+.projects #three{
+    background: linear-gradient(to top right, #261944, #4d343b);
+}
+.projects #four{
+    background: linear-gradient(to top right, #261945, #332562);
+}
+.projects #five{
+    background: linear-gradient(to top right, #261945, #204163);
+    border-bottom-right-radius: 10px;
+}
+
+/* <-----------------------end of page2 -----------------------------------------> */
+/* <-----------------------start of page3 -----------------------------------------> */
+.page3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #140b28;
+    z-index: 0;
+}
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.page3 .effect1 {
+    position: sticky;
+    width: 20vw;
+    height: 20vw;
+    background-color: orangered;
+    filter: blur(200px);
+    top: 0;
+    z-index: 0; 
+}
+
+.page3 .effect2{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    top: 60vh;
+    left: 70vw;
+    background-color: orangered;
+    filter: blur(200px);
+}
+.page3 .three,
+.page3 .two {
+    z-index: 1; 
+}
+
+.page3 .three {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    /* background-color: black; */
+}
+
+.page3 .three .card {
+    width: 250px;
+    height: 300px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    border: 0.5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 5vh;
+    overflow: hidden;
+    transition: .5s;
+}
+.page3 .three .card img{
+    height: 10vh;
+    width: 10vh;
+    border: 2px solid white;
+    padding: 5px;
+    background-color: rgba(255,255,255,0);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    top: 10px;
+}
+.page3 .three .card p{
+    width: 80%;
+    text-align: center;
+
+}
+.page3 .two {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    /* background-color: black; */
+}
+
+.page3 .two .card {
+    width: 250px;
+    height: 300px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    border: 0.5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 5vh;
+    overflow: hidden;
+    transition: .5s;
+}
+.page3 .two .card img{
+    height: 10vh;
+    width: 10vh;
+    border: 2px solid white;
+    padding: 5px;
+    background-color: rgba(255,255,255,0);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    top: 10px;
+}
+.page3 .two .card p{
+    width: 80%;
+    text-align: center;
+
+}
+.card:before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    height: 390px;
+    width: 20px;
+    background: rgba(255,255,255, 0.3);
+    filter: blur(1px);
+    box-shadow: 0 0 10px rgba(255,255,255, 0.1);
+    transform: rotate(25deg) translateX(-200px);
+    
+}
+
+.card:hover:before {
+    animation: shine linear .3s;
+    
+}
+.card:hover{
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;}
+
+@keyframes  shine {
+    0% {
+        transform: rotate(25deg) translate(-180px);
+    }
+    100% {
+        transform: rotate(25deg) translate(180px, 70px);
+    }
+}
+/* <-----------------------end of page3 -----------------------------------------> */
+
+/* <-----------------------start of page3h -----------------------------------------> */
+
+.page3h{
+    width: 100%;
+    min-height: 200vh;
+    background-color: #140b28;
+}
+.container{
+    width: 85%;
+    height: 120vh;
+    /* background-color: red; */
+    margin: 7vw;
+}
+.photo { grid-area: photo; }
+.career { grid-area: career; }
+.education { grid-area: edu; }
+.interests { grid-area: inter; }
+.codingprofiles { grid-area: profile; }
+.github { grid-area: git; }
+
+.container {
+    display: grid;
+    grid-template-areas:
+      'photo photo career career career career'
+      'photo photo career career career career'
+      'edu edu edu edu profile profile'
+      'edu edu edu edu profile profile'
+      'inter inter git git profile profile'
+      'inter inter git git profile profile'
+      ;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+  }
+  .container > div {
+    background-color: linear;
+    background: linear-gradient(to top right, #261b45, #160d2c);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 0.5px 0.4px rgb(180, 158, 246); 
+
+  } 
+  .container > div:hover{
+    background-color: rgba(255,255,255, 0.3);
+    backdrop-filter: blur(20px);
+  }
+  .container{
+    color: white;
+  }
+  .pro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+.pro img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 30px;
+    /* background-color: blue; */
+}
+.github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* <-----------------------end of page3h -----------------------------------------> */
+
+
+/* <-----------------------start of page4 -----------------------------------------> */
+.page4{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #140b28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.form-field {
+    width: 100%; 
+    padding-left: 0.75rem; 
+    padding-right: 0.75rem;
+}
+
+.label {
+    display: block; 
+    text-transform: uppercase; 
+    letter-spacing: 0.05em;
+    color: #9ca3af;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input, .textarea {
+    appearance: none;
+    display: block;
+    width: 100%;
+    background-color: #161616;
+    color: #f6f6f6;
+    border: 1px solid #464646;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1rem;
+    line-height: 1.25;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.input:focus, .textarea:focus {
+    outline: none;
+    background-color: #202020;
+    border-color: #565656;
+}
+
+.textarea {
+    height: 12rem;
+    resize: none;
+}
+
+.button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: #140b28;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #140b28;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5); 
+}
+.or{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
