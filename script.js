@@ -3,14 +3,14 @@ gsap.from(".top h1",{
     duration: 1,
     ease: "power1.out",
     opacity:0,
-    scrub: true
+    // scrub: true
 })
 gsap.from(".navbar",{
     y: -100,
     duration: 1,
     ease: "power1.out",
     opacity:0,
-    scrub: true
+    // scrub: true
 })
 gsap.to(".card",{
     y: -500,
@@ -34,8 +34,11 @@ function handleAnimations() {
 
         if (sno) {
             const projectRect = project.getBoundingClientRect();
-            const triggerOffsetTop = window.innerHeight * 0.6;
-            const triggerOffsetBottom = window.innerHeight * 0.6;
+            const triggerOffsetTop = window.innerHeight*0.6;
+            const triggerOffsetBottom = window.innerHeight*0.6;
+            // console.log(JSON.stringify(projectRect))
+            // console.log(triggerOffsetTop)
+            // console.log(triggerOffsetBottom)
             if (
                 projectRect.top + triggerOffsetTop < window.innerHeight &&
                 projectRect.bottom - triggerOffsetBottom > 0
