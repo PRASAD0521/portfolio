@@ -294,6 +294,10 @@ html {
     background: linear-gradient(to top right, #261945, #204163);
     border-bottom-right-radius: 10px;
 }
+.projects #six{
+    background: linear-gradient(to top right, #1e004b, #001c38);
+    border-bottom-right-radius: 10px;
+}
 
 /* <-----------------------end of page2 -----------------------------------------> */
 /* <-----------------------start of page3 -----------------------------------------> */
